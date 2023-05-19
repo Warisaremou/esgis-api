@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "years",
+  "info": {
+    "singularName": "year",
+    "pluralName": "years",
+    "displayName": "Year"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "academic_year": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 9,
+      "minLength": 9
+    }
+  }
+}

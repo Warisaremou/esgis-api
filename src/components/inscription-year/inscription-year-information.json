@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_inscription_year_inscription_year_informations",
+  "info": {
+    "displayName": "InscriptionYearInformation"
+  },
+  "options": {},
+  "attributes": {
+    "academic_year": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "speciality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::speciality.speciality"
+    }
+  }
+}
