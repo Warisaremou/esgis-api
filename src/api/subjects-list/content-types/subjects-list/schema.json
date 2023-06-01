@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects_lists",
+  "info": {
+    "singularName": "subjects-list",
+    "pluralName": "subjects-lists",
+    "displayName": "SubjectsList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subjectFiles": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "sector_name": {
+      "type": "enumeration",
+      "enum": [
+        "L1-IRT",
+        "L2-IRT",
+        "L3-IRT",
+        "L1-Gestion",
+        "L2-Gestion",
+        "L3-Gestion",
+        "M1-IRT",
+        "M2-IRT",
+        "M1-Gestion",
+        "M2-Gestion"
+      ],
+      "required": true
+    },
+    "option_name": {
+      "type": "enumeration",
+      "enum": [
+        "AL",
+        "SRS",
+        "SR"
+      ]
+    }
+  }
+}

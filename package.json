@@ -9,12 +9,14 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.10.2",
-    "@strapi/plugin-users-permissions": "4.10.2",
+    "@offset-dev/strapi-calendar": "^0.0.10",
+    "@strapi/plugin-documentation": "^4.10.6",
     "@strapi/plugin-i18n": "4.10.2",
-    "better-sqlite3": "8.0.1"
+    "@strapi/plugin-users-permissions": "4.10.2",
+    "@strapi/strapi": "4.10.2",
+    "better-sqlite3": "8.0.1",
+    "web-push": "^3.6.1"
   },
   "author": {
     "name": "A Strapi developer"

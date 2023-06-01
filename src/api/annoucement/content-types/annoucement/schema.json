@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "annoucements",
+  "info": {
+    "singularName": "annoucement",
+    "pluralName": "annoucements",
+    "displayName": "Announcement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "announcement_content": {
+      "type": "text",
+      "required": true
+    },
+    "announcement_type": {
+      "type": "enumeration",
+      "enum": [
+        "Soirée Gala",
+        "Sortie",
+        "Lancement des clubs"
+      ],
+      "required": true
+    },
+    "annoucement_url": {
+      "type": "string"
+    }
+  }
+}

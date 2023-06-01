@@ -123,6 +123,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::year.year"
+    },
+    "user_notification_key": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-notification-key.user-notification-key",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

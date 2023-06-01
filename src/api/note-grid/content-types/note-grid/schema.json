@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "note_grids",
+  "info": {
+    "singularName": "note-grid",
+    "pluralName": "note-grids",
+    "displayName": "NoteGrid"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "matricule": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

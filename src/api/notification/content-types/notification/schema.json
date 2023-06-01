@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "singularName": "notification",
+    "pluralName": "notifications",
+    "displayName": "Notification",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notification_content": {
+      "type": "text",
+      "required": true
+    },
+    "notification_type": {
+      "type": "enumeration",
+      "enum": [
+        "Disponibilité des notes",
+        "Emploie du temps"
+      ],
+      "required": true
+    },
+    "notification_url": {
+      "type": "string"
+    },
+    "metaData": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

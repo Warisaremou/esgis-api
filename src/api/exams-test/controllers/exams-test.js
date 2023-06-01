@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * exams-test controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::exams-test.exams-test');
+module.exports = createCoreController("api::exams-test.exams-test");
