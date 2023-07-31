@@ -13,9 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "intitule": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     }
   }
 }

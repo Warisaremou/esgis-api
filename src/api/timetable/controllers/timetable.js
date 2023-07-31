@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * course controller
+ * timetable controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::course.course');
+module.exports = createCoreController('api::timetable.timetable');

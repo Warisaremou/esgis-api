@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * course service
+ * timetable service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::course.course');
+module.exports = createCoreService('api::timetable.timetable');

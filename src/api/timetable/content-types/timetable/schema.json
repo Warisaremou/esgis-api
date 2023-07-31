@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timetables",
+  "info": {
+    "singularName": "timetable",
+    "pluralName": "timetables",
+    "displayName": "Timetable",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "course_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-section.course-section"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

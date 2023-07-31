@@ -1,5 +1,5 @@
 {
-  "/courses": {
+  "/course-sections": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CourseListResponse"
+                "$ref": "#/components/schemas/CourseSectionListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Course"
+        "Course-section"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/courses"
+      "operationId": "get/course-sections"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CourseResponse"
+                "$ref": "#/components/schemas/CourseSectionResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Course"
+        "Course-section"
       ],
       "parameters": [],
-      "operationId": "post/courses",
+      "operationId": "post/course-sections",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/CourseRequest"
+              "$ref": "#/components/schemas/CourseSectionRequest"
             }
           }
         }
       }
     }
   },
-  "/courses/{id}": {
+  "/course-sections/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CourseResponse"
+                "$ref": "#/components/schemas/CourseSectionResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Course"
+        "Course-section"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/courses/{id}"
+      "operationId": "get/course-sections/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CourseResponse"
+                "$ref": "#/components/schemas/CourseSectionResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Course"
+        "Course-section"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/courses/{id}",
+      "operationId": "put/course-sections/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/CourseRequest"
+              "$ref": "#/components/schemas/CourseSectionRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Course"
+        "Course-section"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/courses/{id}"
+      "operationId": "delete/course-sections/{id}"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ti_tables",
+  "info": {
+    "singularName": "ti-table",
+    "pluralName": "ti-tables",
+    "displayName": "TiTable"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

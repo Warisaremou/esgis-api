@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_sections",
+  "info": {
+    "singularName": "course-section",
+    "pluralName": "course-sections",
+    "displayName": "CourseSection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "datetime",
+      "required": true
+    },
+    "end": {
+      "type": "datetime",
+      "required": true
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject",
+      "inversedBy": "course_sections"
+    },
+    "course_section_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-section-type.course-section-type"
+    },
+    "title": {
+      "type": "enumeration",
+      "enum": [
+        "Shell et Python",
+        "Base de donnée"
+      ]
+    }
+  }
+}

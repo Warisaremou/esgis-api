@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_section_types",
+  "info": {
+    "singularName": "course-section-type",
+    "pluralName": "course-section-types",
+    "displayName": "CourseSectionType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "course"
+    }
+  }
+}

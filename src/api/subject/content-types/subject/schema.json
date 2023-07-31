@@ -4,24 +4,32 @@
   "info": {
     "singularName": "subject",
     "pluralName": "subjects",
-    "displayName": "Subject"
+    "displayName": "Subject",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "intitule": {
+    "subject_name": {
       "type": "string",
       "required": true,
       "unique": true
     },
     "coefficient": {
       "type": "integer",
-      "required": true,
-      "default": 1,
-      "max": 10,
-      "min": 1
+      "required": false
+    },
+    "max_time": {
+      "type": "integer"
+    },
+    "course_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-section.course-section",
+      "private": true,
+      "mappedBy": "subject"
     }
   }
 }

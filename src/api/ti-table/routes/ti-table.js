@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * course router
+ * ti-table router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::course.course');
+module.exports = createCoreRouter('api::ti-table.ti-table');
